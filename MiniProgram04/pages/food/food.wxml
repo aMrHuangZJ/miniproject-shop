@@ -1,0 +1,30 @@
+<!--搜索框-->
+<view class="header">
+   <view class="loaction">
+      <navigator url="../searchCity/searchCity">{{location}}</navigator>
+   </view>
+   <view class="search">
+   <navigator url="../search/search">请输入...</navigator>
+      <!-- <input type="text" placeholder="请输入..."></input> -->
+   </view>
+</view>
+
+<!-- 产品分类 -->
+<view class="product-type">
+   <view class="item" wx:for='{{productType}}' wx:key='index'
+   bindtap="productType" data-mark='{{item.id}}'>
+      <image src='{{item.imgUrl}}'></image>
+      <view>{{item.name}}</view>
+   </view>
+</view>
+
+<!-- 列表数据显示 -->
+<!-- 使用模板方法 -->
+<import src='../../templates/foodList/foodList.wxml'/>
+
+<view wx:for='{{list}}' wx:key='index' bindtap="productDetail" data-id='{{item.id}}'>
+   <template is='foodList' data='{{item}}'></template>
+</view>
+
+<!-- <button bindtap="getMore" wx:if='{{isShow}}'>点击加载更多</button> -->
+<view>{{moreInfo}}</view>

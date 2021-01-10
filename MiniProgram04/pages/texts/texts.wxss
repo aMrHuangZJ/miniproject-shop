@@ -1,0 +1,6 @@
+/* pages/texts/texts.wxss */
+view{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}

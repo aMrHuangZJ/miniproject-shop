@@ -1,0 +1,145 @@
+page{
+  background: #f1f1f1;
+}
+.list{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 左侧内容 */
+.item{
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  width: 100%;
+  /* 动画样式 */
+  transition: all 0.45s;
+  transform: translateX(90px);
+  margin-left: -90px;
+}
+.circle{
+  padding-right: 10rpx;
+}
+.img image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.content{
+  height: 180rpx;
+  position: relative;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.title{
+  margin-bottom: 10rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.subTitle{
+  font-size: 28rpx;
+  color: #999;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+.price{
+  position: absolute;
+  left: 20rpx;
+  bottom: 0;
+  color: red;
+  font-size: 26rpx;
+}
+.update{
+  position: absolute;
+  bottom: 0;
+  left: 240rpx;
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+}
+.reduce{
+  width: 40rpx;
+  height: 40rpx;
+  border: 1rpx solid #999;
+  align-items: center;
+}
+.add{
+  width: 40rpx;
+  height: 40rpx;
+  background: #333;
+  color: #fff;
+  align-items: center;
+}
+.value{
+  width: 80rpx;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+/* 右侧删除按钮 */
+.remove{
+  background: red;
+  color: #fff;
+  display: flex;
+  width: 90px;
+  justify-content: center;
+  overflow: hidden;
+  /* 默认隐藏 */
+  transform: translateX(90px);
+  transition: all 0.45s;
+}
+.touch-move-active .item,.touch-move-active .remove{
+  transform: translateX(0);
+}
+
+/* 结算 */
+
+.bottom {
+  position: fixed;
+  background: #fff;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.all  {
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+}
+.sum text {
+  color: #51b897;
+}
+
+.sum {
+  flex: 1;
+  padding-top: 20rpx;
+  text-align: right;
+}
+
+.sum .he {
+  color: #000;
+  margin-right: 10rpx;
+}
+
+.sum .small {
+  font-size: 22rpx;
+  color: #999;
+  margin-left: 5rpx;
+}
+
+.balance {
+  margin-left: 10rpx;
+  padding: 20rpx;
+  text-align: right;
+  background: #51b897;
+  color: #fff;
+}
+.balance-gray{
+  background: #999;
+}

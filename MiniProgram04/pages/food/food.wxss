@@ -1,0 +1,45 @@
+/* 搜索 */
+page{
+  background: #f1f1f1;
+}
+.header{
+  display: flex;
+  padding: 10rpx;
+  background: #fff;
+  align-items: center;
+}
+.loaction{
+  width: 100rpx;
+  text-align: center;
+}
+.search{
+  background: #f1f1f1;
+  color: #acacac;
+  flex: 1;
+  font-size: 28rpx;
+  padding: 10rpx;
+  border-radius: 12rpx;
+}
+
+/* 分类 */
+.product-type{
+  background: #fff;
+  padding-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item{
+  width: 25%;
+  text-align: center;
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+}
+.item image{
+  width: 74rpx;
+  height: 74rpx;
+}
+
+/* 列表样式 */
+/* 模块方法引入 */
+@import '../../templates/foodList/foodList.wxss';

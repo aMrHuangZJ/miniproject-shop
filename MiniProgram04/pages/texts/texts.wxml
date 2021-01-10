@@ -1,0 +1,10 @@
+<!--pages/texts/texts.wxml-->
+<view>
+<text>hello world</text>
+
+<text>hello world</text>
+
+<text>hello world</text>
+<text>hello world</text>
+<text>hello world</text>
+</view>
